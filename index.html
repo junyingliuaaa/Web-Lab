@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#80ce17">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+
+<body>
+    <div id="flexStyle">
+    <img id="logo" src="https://img.freepik.com/premium-vector/musical-notes-icon-vector-illustration_149152-674.jpg?w=2000" alt="music starts here">
+    <h1> My music App</h1>
+    
+    </div>
+
+        <form method="post" action="#" >
+        <fieldset>
+        <legend> New Song</legend>
+        <label for="inpTitle">Title:
+        <input type="text" id="inpTitle" name="inpTitle" placeholder="Write the Title Name"></label>
+        <label for="inpArtist">Artist:
+        <input type="text" id="inpArtist" name="inpArtist" placeholder="Write the Artist Name"></label>
+        <button type ="button" id="btnInsert" >Add Song</button>
+        </fieldset>
+        </form>
+
+        <fieldset>
+            <legend>List of Songs</legend>
+            <div id="lsOutput"></div>
+        </fieldset>
+        <script src="./script.js"></script>
+        <script src="/js/service-worker.js"></script>
+    
+</body>
+</html>
